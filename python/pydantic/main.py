@@ -3,7 +3,8 @@ from pydantic import ValidationError
 
 
 def main():
-    user_data = {"name": "John Doe", "email": "john.doe@example.com", "age": 25}
+    # user_data = {"name": "John Doe", "email": "john.doe@example.com", "age": 25}
+    user_data = {"name": "John Doe", "email": "john.doe@example.com", "age": "25"}
 
     try:
         user = User(**user_data)
