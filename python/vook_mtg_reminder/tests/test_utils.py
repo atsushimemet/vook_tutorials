@@ -12,6 +12,15 @@ def test_calculate_saturdays():
     assert third_saturday == datetime(2023, 1, 21)  # 2023年1月の第三土曜日
 
 
+# def test_not_calculate_saturdays():
+#     # calculate_saturdays関数のテスト
+#     year = 2023
+#     month = 1  # 例えば2023年1月
+#     first_saturday, third_saturday = calculate_saturdays(year, month)
+#     assert first_saturday != datetime(2023, 1, 6)  # 2023年1月の第一土曜日の一日前
+#     assert third_saturday != datetime(2023, 1, 20)  # 2023年1月の第三土曜日の一日前
+
+
 # @patch("requests.post")
 # def test_set_slack_reminder(mock_post):
 #     # set_slack_reminder関数のテスト
