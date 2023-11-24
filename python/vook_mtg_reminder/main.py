@@ -1,24 +1,5 @@
 import datetime
-import requests
-from config import slack_token
-
-
-# 第一土曜日と第三土曜日の日付を計算する関数
-def calculate_saturdays(year, month):
-    # ...
-    return None
-
-
-# Slackにリマインダーを設定する関数
-def set_slack_reminder(date, message):
-    url = "https://slack.com/api/reminders.add"
-    headers = {
-        "Authorization": f"Bearer {slack_token}",
-        "Content-Type": "application/json",
-    }
-    data = {"text": message, "time": date, "user": "ユーザーID"}
-    response = requests.post(url, headers=headers, json=data)
-    return response.json()
+from utils import calculate_saturdays, set_slack_reminder
 
 
 def main():
